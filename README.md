@@ -14,4 +14,4 @@ This is a grunt file which runs tasks to process a folder of SVG files (generall
 ### Adding new icons to the set
 
 1. Open the icon you wish to add to the set in Sketch
-2. Install the Sketch SVGO plugin 
+2. Install the Sketch SVGO plugin    
