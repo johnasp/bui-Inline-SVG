@@ -25,8 +25,7 @@ The process should now run and create a sub-folder called 'build'.  This will co
 
 1. Open Sketch
 2. Install the [Sketch SVGO compressor plugin](https://www.sketchapp.com/extensions/plugins/svgo-compressor/) 
-3. Create a new artboard and name this accordingly using hyphens where required.  Make the name meaningful and within naming conventions as the name you enter will form the name of the identifier used in the HTML and CSS. 
-![Alarm Clock artboard](alarm-clock.png)
+3. Create a new artboard and name this accordingly using hyphens where required.  Make the name meaningful and within naming conventions as the name you enter will form the name of the identifier used in the HTML and CSS.
 
 3. Select that artboard then click 'make exportable'. 
 4. In export settting select 'SVG' and click the 'export selected' button. The SVGO plugin will automatically clean and compress the SVG output code.
@@ -34,6 +33,5 @@ The process should now run and create a sub-folder called 'build'.  This will co
 5. If the new is icon is to be part of the primart icon set (which is likely), save it to the following folder _bcars-icons/primary
 
 6. Keep your eye on the terminal window when save the icon file to the path.  You will see the build process kick off automatically as the folder is being 'watched' for any changes.  It will be rebuild all the definition files and PNG folders so they automatically contain the new icon you have just added.
-
 ![Sketch](sketch.gif)
 
