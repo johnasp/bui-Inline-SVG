@@ -16,7 +16,7 @@ The process should now run and create a sub-folder called 'build'.  This will co
 
 It will also contain a folder called 'png' which contains the PNG fallback files at 16x16 and 32x32 resolutions.  (This can be changed as needed by modifying gruntfile.js accordingly)
 
-![folder.png](folder.png)
+![folder.png](folder.png)  
 
 ## How to add a new icon to the set
 
@@ -30,4 +30,3 @@ It will also contain a folder called 'png' which contains the PNG fallback files
 5. If the new is icon is to be part of the primart icon set (which is likely), save it to the following folder _bcars-icons/primary
 6. Keep your eye on the terminal window when save the icon file to the path.  You will see the build process kick off automatically as the folder is being 'watched' for any changes.  It will be rebuild all the definition files and PNG folders so they automatically contain the new icon you have just added.
 ![Sketch](sketch.gif)
-
