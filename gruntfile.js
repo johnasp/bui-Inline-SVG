@@ -94,7 +94,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask(
         'default', [
-                'svgstore', 'convert-svg-to-png', //'watch'
+                'svgstore', 'convert-svg-to-png', 'watch'
             ]
     );
     grunt.registerTask('icons', ['svgstore', 'convert-svg-to-png', 'watch']);
