@@ -14,7 +14,7 @@ This inline SVG icon system is powered by NPM and Grunt.  The grunt file runs ta
 ![Change directory in terminal helper](https://res.cloudinary.com/john73/image/upload/v1549893965/Feb-11-2019_14-04-58_vr4v1j.gif "Change directory in terminal helper instructions")
 2. Type `grunt`  The process should now run and create a folder called 'build' in your root folder.  This will contain the 'defs' file for both the primary and secondary icon sets.  It will also contain a folder called 'png' which will contain PNG files used for fallbacks. 
 
-### How to add a new icon to the set
+## How to add a new icon to the set
 
 1. Open Sketch
 2. Install the Sketch SVGO compressor plugin https://www.sketchapp.com/extensions/plugins/svgo-compressor/
