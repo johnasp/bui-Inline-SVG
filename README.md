@@ -9,3 +9,9 @@ This is a grunt file which runs tasks to process a folder of SVG files (generall
 3. Go to this repo https://github.com/johnasp/Inline-SVG-system-with-Defs and download the package.json and gruntfile.js files into the folder you created in step 2 above. 
 4. Install all the project dependies with this command:  npm -install 
 5. Open terminal and navigate to the project folder.  TIP - I type 'cd' in terminal and then locate the folder in Finder and drap and drop this folder in terminal which adds the full path in terminal so you dont need to type it all in. 
+6. Type grunt and watch the process will create 
+
+### Adding new icons to the set
+
+1. Open the icon you wish to add to the set in Sketch
+2. Install the Sketch SVGO plugin 

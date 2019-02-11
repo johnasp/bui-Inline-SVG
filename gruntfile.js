@@ -18,12 +18,12 @@ module.exports = function (grunt) {
             },
             primary: {
                 files: {
-                    'bcars-icons/primary/defs/bcars-primary-defs.svg': ['bcars-icons/primary/svg/*.svg'],
+                    'build/defs/bcars-primary-defs.svg': ['bcars-icons/primary/*.svg'],
                 },
             },
             secondary: {
                 files: {
-                    'bcars-icons/secondary/defs/bcars-secondary-defs.svg': ['bcars-icons/secondary/svg/*.svg'],
+                    'build/defs/bcars-secondary-defs.svg': ['bcars-icons/secondary/*.svg'],
                 },
             },
           },
@@ -35,9 +35,9 @@ module.exports = function (grunt) {
                     },
                     files: [{
                         expand: true,
-                        cwd: "bcars-icons/primary/svg",
+                        cwd: "bcars-icons/primary",
                         src: ["**/*.svg"],
-                        dest: "bcars-icons/primary/png/16x16"
+                        dest: "build/png/16x16"
                     }]
                 },
                 primary32: {
@@ -46,9 +46,9 @@ module.exports = function (grunt) {
                     },
                     files: [{
                         expand: true,
-                        cwd: "bcars-icons/primary/svg",
+                        cwd: "bcars-icons/primary",
                         src: ["**/*.svg"],
-                        dest: "bcars-icons/primary/png/32x32"
+                        dest: "build/png/32x32"
                     }]
                 },
                 secondary16: {
@@ -57,9 +57,9 @@ module.exports = function (grunt) {
                     },
                     files: [{
                         expand: true,
-                        cwd: "bcars-icons/secondary/svg",
+                        cwd: "bcars-icons/secondary",
                         src: ["**/*.svg"],
-                        dest: "bcars-icons/secondary/png/16x16"
+                        dest: "build/png/16x16"
                     }]
                 },
                 secondary32: {
@@ -68,9 +68,9 @@ module.exports = function (grunt) {
                     },
                     files: [{
                         expand: true,
-                        cwd: "bcars-icons/secondary/svg",
+                        cwd: "bcars-icons/secondary",
                         src: ["**/*.svg"],
-                        dest: "bcars-icons/secondary/png/32x32"
+                        dest: "build/png/32x32"
                     }]
                 },
           },
@@ -94,7 +94,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask(
         'default', [
-                'watch'
+                'svgstore', 'convert-svg-to-png', //'watch'
             ]
     );
     grunt.registerTask('icons', ['svgstore', 'convert-svg-to-png', 'watch']);
