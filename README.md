@@ -2,12 +2,14 @@
 
 This inline SVG icon system is powered by NPM and Grunt.  The grunt file processes a folder of individual SVG icon files and couputs a single definitions file <def> based on the contents of the folder.  It also generates PNG versions of the SVG files at 16x16 and 32x32.
 
-## How to install NPM, Grunt and the grunt file and resources
+## How to install Node, Grunt and the grunt file and resources
 
 1. Install Node on your computer (if not already running): https://nodejs.org/en/
 2. Create a folder on your computer like 'icons' or similar.
 3. Clone or download this repo https://github.com/johnasp/Inline-SVG-system-with-Defs into the folder you created in step 2 above. 
-4. Install all the project dependencie with this command:  `npm -install`
+4. Install Grunt CLI as global: `npm install -g grunt-cli`
+5. Install Grunt in your local project" `npm install grunt --save-dev`
+6. Run the build process by typing `grunt`
 
 ## How to run the process 
 1. Open terminal and navigate to the project folder.  TIP - I type `cd` in terminal and then locate the folder in Finder and drap and drop this folder into terminal which adds the full path in terminal so you dont need to type it all in. 
