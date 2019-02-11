@@ -11,7 +11,7 @@ This inline SVG icon system is powered by NPM and Grunt.  The grunt file runs ta
 
 ## How to run the process 
 1. Open terminal and navigate to the project folder.  TIP - I type `cd` in terminal and then locate the folder in Finder and drap and drop this folder into terminal which adds the full path in terminal so you dont need to type it all in. 
-![Change directory in terminal helper](http://www.giphy.com/gifs/1ivFoS8IBcTnp877Mc "Change directory in terminal helper instructions")
+![Change directory in terminal helper](https://res.cloudinary.com/john73/image/upload/v1549893965/Feb-11-2019_14-04-58_vr4v1j.gif "Change directory in terminal helper instructions")
 2. Type `grunt`  The process should now run and create a folder called 'build' in your root folder.  This will contain the 'defs' file for both the primary and secondary icon sets.  It will also contain a folder called 'png' which will contain PNG files used for fallbacks. 
 
 ### How to add a new icon to the set
