@@ -1,25 +1,24 @@
 # Booking.com inline SVG icon system 
 
-This inline SVG icon system is powered by NPM and Grunt.  The grunt file processes a folder of individual SVG icon files and couputs a single definitions file <def> based on the contents of the folder.  It also generates PNG versions of the SVG files at 16x16 and 32x32.
+This is an inline SVG icon build system powered by NPM and Grunt.  The grunt file processes a folder of individual SVG icon files and couputs a single definitions file <def> based on the contents of the folder.  It also generates PNG versions of the SVG files at 16x16 and 32x32.
 
-## Node JS and Grunt setup
+## Node JS and Grunt setup  
 
-1. Install [Node JS](https://nodejs.org/en/) on your computer (if not already installed).
-2. Install Grunt CLI as global: `npm install -g grunt-cli`
-3. Install Grunt in your local project" `npm install grunt --save-dev`
+* Install [Node JS](https://nodejs.org/en/) on your computer (if not already installed).  Check if it has by typing this `node -v`.  If a version is not returned you need to install it.
+* Install Grunt CLI as global: `sudo npm install -g grunt-cli`
+* Navigate to the root folder where you normally store your projects.
+* Open terminal and navigate to the folder above.  TIP - I type `cd` in terminal and then locate the folder in Finder and drag and drop this folder into terminal which adds the full path so you dont need to type it all in. ![Change directory in terminal helper](cd.gif "Change directory in terminal helper instructions")
+* Paste and enter this in terminal to clone the build files : `git clone https://github.com/johnasp/Inline-SVG-system-with-Defs.git`
+* You will see a new folder callled 'Inline-SVG'.  Navigate into this folder by typing `cd inline-svg`
 
-## Clone the repo
-
-1. Create a folder on your computer like 'icons' or similar.
-2. Open terminal and navigate to the folder above.  TIP - I type `cd` in terminal and then locate the folder in Finder and drag and drop this folder into terminal which adds the full path so you dont need to type it all in. ![Change directory in terminal helper](cd.gif "Change directory in terminal helper instructions")
-3. Paste this to clone the repo to your computer `git clone https://github.com/johnasp/Inline-SVG-system-with-Defs.git`
-4. Press Enter. Your local clone will be created.
 
 ## Run the build process
 
-1. Type the following to run the process `grunt`
+1. Type the following to run the build process `grunt`
 
 The process should now run and create a folder called 'build' in your folder.  This will contain the 'defs' file for both the primary and secondary icon sets.  It will also contain a folder called 'png' which will contain the PNG files used for fallbacks. 
+
+![folder.png](folder.png)
 
 ## How to add a new icon to the set
 
