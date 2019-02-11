@@ -1,6 +1,6 @@
 # Booking.com inline SVG icon system 
 
-This inline SVG icon system is powered by NPM and Grunt.  The grunt file runs tasks to process a folder of individual SVG icon files and couputs a single definitions file <def> based on the contents of the folder.  It also processes PNG versions of the SVG files at 16x16 and 32x32.
+This inline SVG icon system is powered by NPM and Grunt.  The grunt file processes a folder of individual SVG icon files and couputs a single definitions file <def> based on the contents of the folder.  It also generates PNG versions of the SVG files at 16x16 and 32x32.
 
 ## How to install NPM, Grunt and the grunt file and resources
 
@@ -11,7 +11,7 @@ This inline SVG icon system is powered by NPM and Grunt.  The grunt file runs ta
 
 ## How to run the process 
 1. Open terminal and navigate to the project folder.  TIP - I type `cd` in terminal and then locate the folder in Finder and drap and drop this folder into terminal which adds the full path in terminal so you dont need to type it all in. 
-![Change directory in terminal helper](https://res.cloudinary.com/john73/image/upload/v1549893965/Feb-11-2019_14-04-58_vr4v1j.gif "Change directory in terminal helper instructions")
+![Change directory in terminal helper](cd.gif "Change directory in terminal helper instructions")
 2. Type `grunt`  The process should now run and create a folder called 'build' in your root folder.  This will contain the 'defs' file for both the primary and secondary icon sets.  It will also contain a folder called 'png' which will contain PNG files used for fallbacks. 
 
 ## How to add a new icon to the set
@@ -21,4 +21,5 @@ This inline SVG icon system is powered by NPM and Grunt.  The grunt file runs ta
 3. Open the new icon in Sketch and ensure it is placed within an artboard
 3. Select that artboard then click 'make exportable'.  In export settting select 'SVG' and click the 'export selected' button. The SVGO plugin will automatically clean and compress the SVG output code.  
 5. Choose the folder which contains the existing icons for where to save the file to.   
-![Sketch export setting panel](https://res.cloudinary.com/john73/image/upload/v1549892107/export-settings_z3gzsh.png "Export setting panel")
+![Sketch export setting panel](export-settings.png "Export setting panel")
+
