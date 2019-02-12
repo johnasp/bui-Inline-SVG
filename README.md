@@ -8,7 +8,7 @@ An inline SVG icon build system powered by NPM and Grunt.  The grunt tasks buil 
 2. Install Grunt CLI as global: `sudo npm install -g grunt-cli`
 3. Navigate to the root folder where you normally store your projects.
 4. Open terminal and navigate to your project root folder.  
-TIP - I type `cd` in terminal, locate the folder in Finder and drag and drop this folder into terminal.  This adds the full path to the folder so you dont need to type it all in. ![Change directory in terminal helper](cd.gif "Change directory in terminal helper instructions")
+TIP - I type `cd` in terminal, locate the folder in Finder and drag and drop this folder into terminal.  This adds the full path to the folder so you dont need to type it all in. ![Change directory in terminal helper](img/cd.gif "Change directory in terminal helper instructions")
 5. Copy & paste this code to clone the build files onto your computer:
  `git clone https://github.com/johnasp/Inline-SVG-system-with-Defs.git`
 
@@ -19,7 +19,7 @@ TIP - I type `cd` in terminal, locate the folder in Finder and drag and drop thi
 
 > The process should now run and create a sub-folder called 'build'.  This will contain the definitions SVG file for both the primary and secondary icon sets.  It will also contain a folder called 'png' which contains the PNG fallback files at 16x16 and 32x32 resolutions.  (This can be changed as needed by modifying gruntfile.js accordingly)
 
-![folder.png](folder.png)  
+![img/folder.png](folder.png)  
 
 ## How to add a new icon to the set
 
@@ -30,6 +30,6 @@ TIP - I type `cd` in terminal, locate the folder in Finder and drag and drop thi
 4. In export settting select 'SVG' and click the 'export selected' button. The SVGO plugin will automatically clean and compress the SVG output code.
 5. If the new is icon is to be part of the primart icon set (which is likely), save it to the following folder _bcars-icons/primary
 6. Keep your eye on the terminal window when save the icon file to the path.  You will see the build process kick off automatically as the folder is being 'watched' for any changes.  It will be rebuild all the definition files and PNG folders so they automatically contain the new icon you have just added.
-![Sketch](sketch.gif)
+![Sketch](img/sketch.gif)
 
 > NB - Ensure the grunt build process is running before performing these steps and the _watch_ process is running.  The purpose of this is to automatically kick off the build whenver a new icon is added or modified.  
