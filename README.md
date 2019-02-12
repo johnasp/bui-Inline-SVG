@@ -24,13 +24,13 @@ TIP - I type `cd` and locate the folder in Finder, then drag and drop the folder
 
 ## How to add a new icon to the set
 
-1. Open Sketch
-2. Install the [Sketch SVGO compressor plugin](https://www.sketchapp.com/extensions/plugins/svgo-compressor/) 
+1. Open Sketch.
+2. Install the [Sketch SVGO compressor plugin].(https://www.sketchapp.com/extensions/plugins/svgo-compressor/) 
 3. Create a new artboard and name this accordingly using hyphens where required.  Make the name meaningful and within naming conventions as the name you enter will form the name of the identifier used in the HTML and CSS.
 3. Select that artboard then click 'make exportable'. 
 4. In export settting select 'SVG' and click the 'export selected' button. The SVGO plugin will automatically clean and compress the SVG output code.
-5. If the new is icon is to be part of the primart icon set (which is likely), save it to the following folder _bcars-icons/primary
-6. Keep your eye on the terminal window when save the icon file to the path.  You will see the build process kick off automatically as the folder is being 'watched' for any changes.  It will be rebuild all the definition files and PNG folders so they automatically contain the new icon you have just added.
+5. If the new is icon is to be part of the primary icon set (which is likely), save it to the following folder `_bcars-icons/primary`
+6. Keep your eye on the terminal window when you save the icon file.  You will see the build process kick off automatically as the folder is being 'watched' for any changes.  It will rebuild all the definition files and PNG folders so they contain the new icon you have just added.
 ![Sketch](img/sketch.gif)
 
-> NB - Ensure the grunt build process is running before performing these steps and the _watch_ process is running.  The purpose of this is to automatically kick off the build whenver a new icon is added or modified.  
+> NB - Ensure the grunt build process is running before performing these steps.  It will not update the files if it isn't.
