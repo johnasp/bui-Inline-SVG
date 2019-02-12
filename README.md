@@ -24,6 +24,8 @@ TIP - I type `cd` and locate the folder in Finder, then drag and drop the folder
 
 ## How to add a new icon to the set
 
+> NB - Ensure the grunt build process is running before performing these steps.  It will not update the files if it isn't.
+
 1. Open Sketch.
 2. Install the [Sketch SVGO compressor plugin](https://www.sketchapp.com/extensions/plugins/svgo-compressor/).
 3. Create a new artboard and name this accordingly using hyphens where required.  Make the name meaningful and within naming conventions as the name you enter will form the name of the identifier used in the HTML and CSS.
@@ -33,4 +35,3 @@ TIP - I type `cd` and locate the folder in Finder, then drag and drop the folder
 6. Keep your eye on the terminal window when you save the icon file.  You will see the build process kick off automatically as the folder is being 'watched' for any changes.  It will rebuild all the definition files and PNG folders so they contain the new icon you have just added.
 ![Sketch](img/sketch.gif)
 
-> NB - Ensure the grunt build process is running before performing these steps.  It will not update the files if it isn't.
