@@ -5,18 +5,21 @@ An inline SVG icon build system powered by NPM and Grunt.  The grunt tasks buil 
 ## Initial setup
 
 1. Install [Node JS](https://nodejs.org/en/) on your computer (if not already installed).  Type `node -v` to check.  If a version is not returned you need to install it.
-2. Open terminal and install Grunt CLI as global: `sudo npm install -g grunt-cli`
+2. Open terminal and install Grunt CLI as global: 
+`sudo npm install -g grunt-cli`
 3. Navigate to the root folder where you normally store your projects.
 TIP - I type `cd` and locate the folder in Finder, then drag and drop the folder into terminal.  This adds the full path to the folder so you dont need to type it all in. 
 ![Change directory in terminal helper](img/cd.gif "Change directory in terminal helper instructions")
 4. Clone the build files:  
 `git clone https://github.com/johnasp/bui-Inline-SVG.git`
 5. Navigate into this new new sub-folder by typing `cd bui-inline-svg`
-6. Install build dependencies `npm install --save-dev`
+6. Install build dependencies 
+`npm install --save-dev`
 
 ## Build the icons
 
-1. Run the icon build process by typing `grunt`
+1. Run the icon build process by typing 
+`grunt`
 
 > The process should now run and create a sub-folder called 'build'.  This will contain the definitions SVG file for both the primary and secondary icon sets.  It will also contain a folder called 'png' which contains the PNG fallback files at 16x16 and 32x32 resolutions.  (This can be changed as needed by modifying gruntfile.js accordingly)
 
