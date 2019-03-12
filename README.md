@@ -25,16 +25,28 @@ TIP - I type `cd` and locate the folder in Finder, then drag and drop the folder
 
 ![folder.png](img/folder.png)  
 
-## How to add a new icon to the set
+## How to add a new icon(s) to the set
 
-> NB - Ensure the grunt build process is running before performing these steps.  It will not update the files if it isn't.
+Install these two Sketch plugins first:
+
+* [Sketch SVGO compressor plugin](https://www.sketchapp.com/extensions/plugins/svgo-compressor/)
+* [Sketch icons plugin](https://sketchicons.com/)
 
 1. Open Sketch.
-2. Install the [Sketch SVGO compressor plugin](https://www.sketchapp.com/extensions/plugins/svgo-compressor/).
-3. Create a new artboard and name this accordingly using hyphens where required.  Make the name meaningful and within naming conventions as the name you enter will form the name of the identifier used in the HTML and CSS.
-3. Select that artboard then click 'make exportable'. 
-4. In export settting select 'SVG' and click the 'export selected' button. The SVGO plugin will automatically clean and compress the SVG output code.
-5. If the new is icon is to be part of the primary icon set (which is likely), save it to the following folder `_bcars-icons/primary`
-6. Keep your eye on the terminal window when you save the icon file.  You will see the build process kick off automatically as the folder is being 'watched' for any changes.  It will rebuild all the definition files and PNG folders so they contain the new icon you have just added.
+2. Import the new SVG icon(s) into sketch using the Sketch Icons plugin. `Plugins -> Sketch Icons -> Replace icons...`  Untick 'Convert to symbol' in the options and the hit 'continue' button and browse to the folder where you have your SVG icons. 
+3. You will now see your icons in your Sketch document each icon on its own artboard.  If necessary, rename the artboard so its meaningful and within naming conventions as the artboard name forms the name of the ID identifier in the HTML and CSS.
+5. Select the artboard(s) containing the icon(s) and click 'make exportable'. 
+6. In export settting select 'SVG' and click the 'export selected' button. _NB - The SVGO plugin will automatically clean and compress the SVG output code when you export it. _
+6. If the new is icon is to be part of the primary icon set (which is likely), save it to the following folder `_bcars-icons/primary`
+
+### Demo of steps above
+
+![Import/export of SVG in Sketch](img/svg-import-export-demo.gif)
+
+> Keep your eye on the terminal window when you save the icon file.  You will see the build process kick off automatically as the folder is being 'watched' for any changes.  It will rebuild all the definition files and PNG folders so they contain the new icon you have just added.  NB - Ensure the grunt build process is running before performing these steps.  It will not update the files if it isn't.
+
+Sketch 
+
 ![Sketch](img/sketch.gif)
+
 
